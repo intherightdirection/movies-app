@@ -1,0 +1,6 @@
+<section ng-controller="movieController">
+  <article ng-repeat="movie in data.movies">
+    <div ng-if="movieId == movie.id" class="video-box">
+    <video preload="auto" ng-src="{{movie.movie_path}}" width="1280px" height="720px" autoplay controls class="video"></video>
+  </article>
+</section>

@@ -1,0 +1,9 @@
+node_modules/
+tools/
+*.jpg
+*.mp4
+README.md
+*.tmp
+.vs/
+.vscode/
+*.log

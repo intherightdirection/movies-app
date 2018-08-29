@@ -1,0 +1,22 @@
+{
+  "name": "movies-app",
+  "version": "1.0.0",
+  "description": "A Netflix inspired interface for playing local .mp4 movies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intherightdirection/movies-app.git"
+  },
+  "author": "Jared Dunlop\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DC.P. Dunlop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/intherightdirection/movies-app/issues"
+  },
+  "homepage": "https://github.com/intherightdirection/movies-app#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html ng-app="movieApp">
+  <head>
+    <title>Local Movies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script src="controllers/mainCtrl.js"></script>
+    <script src="controllers/infoCtrl.js"></script>
+    <script src="controllers/movieCtrl.js"></script>
+    <script src="ng-modules/angular-route.js"></script>
+    <link src="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+    <body ng-controller="mainController">
+      <ng-view />
+    </body>
+</html>
