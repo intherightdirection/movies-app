@@ -1,5 +1,5 @@
 <section ng-controller="movieInfo" class="main">
-    <article ng-repeat="item in data.products" class="movieFrame">
+    <article ng-repeat="item in data.products" class="movie-frame">
       <figure class="thumbnail">
        <a href="#/surprise/{{item.id}}"><img ng-src="images{{item.poster_path}}" class="poster-sm" ng-alt="{{item.title}}"></a>
       </figure>
@@ -10,7 +10,6 @@
           <figure class="poster">
             <a href="#/surprise/{{item.id}}"><img ng-src="images{{item.poster_path}}" class="poster-sm" ng-alt="{{item.title}}"></a>
           </figure>
-          <div class="movie-info-text-box">
             <h2 class="movie-info-title">{{item.title}}</h2>
             <h4>{{item.overview}}</h3>
             <h5 class="top-cast">Starring:</h2>
@@ -20,10 +19,9 @@
               <li ng-if="item.cast[2]" class="cast">{{item.cast[2]}}</li>
               <li ng-if="item.cast[3]" class="cast">{{item.cast[3]}}</li>
             </ul>
-            <h6>Runtime: {{item.runtime}}</h5>
-            <h6>Released: {{item.year}}</h5>
+            <h6>Runtime: {{item.runtime}}</h6>
+            <h6>Released: {{item.year}}</h6>
             <button ng-click="getInfo()">Close</button>
-          </div>
         </div>
     </article>
   </section>
