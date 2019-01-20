@@ -111,8 +111,8 @@ li {
 }
 
 @media all and (min-width: 1024px) {
-  .movie-frame  {height: 28em;}
-  .info-box {font-size: 1.25em; height: 21.1em;}
+  .movie-frame  {height: 29.25em;}
+  .info-box {font-size: 1.25em; height: 22.25em;}
 }
 
 @media all and (min-width: 1240px) {
@@ -122,8 +122,8 @@ li {
   .info-box h2,h4 {margin: .5em}
 }
 
-@media all and (min-width: 1880px) {
-  .movie-frame {font-size: 1.5em; height: 27em;}
+@media all and (min-width: 1800px) {
+  .movie-frame {font-size: 1.5em; height: 2725.25em;}
   .info-box {height: 27em;}
   .info-box > h2 {font-size: 2em; }
   h4,h5,h6,button,li {font-size: 1.25em; }
