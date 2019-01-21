@@ -10,17 +10,17 @@
           <figure class="poster">
             <a href="#/surprise/{{item.id}}"><img ng-src="images{{item.poster_path}}" class="poster-sm" ng-alt="{{item.title}}"></a>
           </figure>
-            <h2 class="movie-info-title">{{item.title}}</h2>
-            <h4>{{item.overview}}</h3>
+            <h2 class="movie-info-title">{{info.title}}</h2>
+            <h4>{{info.overview}}</h3>
             <h5 class="top-cast">Starring:</h2>
             <ul>
-              <li ng-if="item.cast[0]" class="cast">{{item.cast[0]}}</li>
-              <li ng-if="item.cast[1]" class="cast">{{item.cast[1]}}</li>
-              <li ng-if="item.cast[2]" class="cast">{{item.cast[2]}}</li>
-              <li ng-if="item.cast[3]" class="cast">{{item.cast[3]}}</li>
+              <li ng-if="info.cast[0]" class="cast">{{info.cast[0]}}</li>
+              <li ng-if="info.cast[1]" class="cast">{{info.cast[1]}}</li>
+              <li ng-if="info.cast[2]" class="cast">{{info.cast[2]}}</li>
+              <li ng-if="info.cast[3]" class="cast">{{info.cast[3]}}</li>
             </ul>
-            <h6>Runtime: {{item.runtime}}</h6>
-            <h6>Released: {{item.year}}</h6>
+            <h6>Runtime: {{info.runtime}}</h6>
+            <h6>Released: {{info.year}}</h6>
             <button ng-click="getInfo()">Close</button>
         </div>
     </article>

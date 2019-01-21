@@ -1,15 +1,25 @@
+import { rejects } from "assert";
+
 angular.module('movieApp')
-.controller('movieInfo', function($scope) {
+.controller('movieInfo', function($scope,$http) {
   
   $scope.id = '';
   $scope.playId = '';
-  
-  $scope.getInfo = function(id) {
-    $scope.id = id;
-    console.log(id);
-    return $scope.id;
-  }
+  $scope.info = {};
 
+
+  $scope.getInfo = (id) => {
+    $scope.id = id;
+    $http.get(`info/movie_id${id}`)
+    .success(function(data) {
+      $scope.info = data;
+    })
+    .error(function(error) {
+      $scope.error = error;
+    })
+    return $scope; 
+  }
+  
   $scope.closeInfo = () => {
     $scope.id = 0;
   }
