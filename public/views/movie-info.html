@@ -8,7 +8,7 @@
     <article ng-repeat="item in data.products | filter:id">
         <div ng-if="id == item.id" class="info-box">
           <figure class="poster">
-            <a href="#/surprise/{{item.id}}"><img ng-src="images{{item.poster_path}}" class="poster-sm" ng-alt="{{item.title}}"></a>
+            <a href="#/surprise/{{info.id}}"><img ng-src="images{{info.poster_path}}" class="poster-sm" ng-alt="{{info.title}}"></a>
           </figure>
             <h2 class="movie-info-title">{{info.title}}</h2>
             <h4>{{info.overview}}</h3>

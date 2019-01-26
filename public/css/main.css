@@ -119,11 +119,11 @@ li {
   body {font-size: 16px;} 
   .movie-frame  {height: 28em;}
   .info-box { height: 21em;}
-  .info-box h2,h4 {margin: .5em}
+  .info-box h2,h4 {margin: .5em;}
 }
 
 @media all and (min-width: 1800px) {
-  .movie-frame {font-size: 1.5em; height: 2725.25em;}
+  .movie-frame {font-size: 1.5em; height: 27em;}
   .info-box {height: 27em;}
   .info-box > h2 {font-size: 2em; }
   h4,h5,h6,button,li {font-size: 1.25em; }

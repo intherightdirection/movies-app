@@ -4,10 +4,11 @@ angular.module('movieApp', ['ngRoute'])
   $routeProvider.when('/surprise/:playId', { templateUrl: '/views/movie-view.html' });
   $routeProvider.otherwise({ templateUrl: '/views/movie-info.html' });
 })
-  .controller('mainController', function($scope, $http) {
+.constant('dataUrl', 'http://localhost:3000/info/movies.json')
+.controller('mainController', function($scope, $http, dataUrl) {
     $scope.data = {};
 
-    $http.get(`info/movies.json`)
+    $http.get(dataUrl)
       .success(function(data) {
         $scope.data.products = data;
       })
