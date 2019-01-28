@@ -1,11 +1,9 @@
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
+import express, { static } from "express";
 
 const app = express();
 const PORT = 3000;
 
-app.use(express.static('./public'));
+app.use(static('./public'));
 
 app.use(require('./routes/mainRoute'));
 
